@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Gamer sign-up form</title>
+
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="main-container">
+    <section class="left-section">
+      <article class="left-section-header">
+        <img src="./assets/images/logo.svg" alt="logo" class="logo">
+        <strong class="ready-count mobile"><span>0</span>/5 ready</strong>
+      </article>
+      <article class="hero-section">
+        <h1>// Join the nexus</h1>
+        <p>Initialize your NEONCORE identity</p>
+        <hr>
+        <div class="hero-section-first-section">
+          <div class="operator-info">
+            <p>Operator ID</p>
+            <p>Unassigned</p>
+          </div>
+          <strong class="ready-count-desktop"><span>0</span>/5 ready</strong>
+        </div>
+      </article>
+      <article class="gamer-info">
+        <div class="callsign">
+          <p>Callsign</p>
+          <hr>
+          <span class="status">Pending</span>
+        </div>
+        <div class="email">
+          <p>email</p>
+          <hr>
+          <span class="status">Pending</span>
+        </div>
+        <div class="password">
+          <p>password</p>
+          <hr>
+          <span class="status">Pending</span>
+        </div>
+        <div class="password-confirmation">
+          <p>confirmation</p>
+          <hr>
+          <span class="status">Pending</span>
+        </div>
+        <div class="terms">
+          <p>terms</p>
+          <hr>
+          <span class="status">Pending</span>
+        </div>
+      </article>
+    </section>
+    <section right-section>
+      <div class="right-section-header">
+        <p>New operator</p>
+        <p>All fields required</p>
+      </div>
+      <hr>
+      <form>
+        <div class="callsign">
+          <label for="callsign">> Callsign</label>
+          <input type="text" placeholder="e.g. Vortex_07" id="email">
+        </div>
+        <div class="email">
+          <label for="email">> Email</label>
+          <input type="email" id="email" placeholder="you@example.com">
+        </div>
+        <div class="password">
+          <label for="password">> Password</label>
+          <div class="password-wrapper">
+            <input type="text" id="password">
+            <button class="hide-password">
+              <img src="./assets/images/icon-eye.svg" alt="hide password">
+            </button>
+            <button class="show-password">
+              <img src="./assets/images/icon-eye-off.svg" alt="show password">
+            </button>
+          </div>
+          <div class="password-meter">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <p>Use at least 8 characters</p>
+        </div>
+        <div class="password-confirmation">
+          <label for="confirmation">> Confirm password</label>
+          <div class="password-confirmation-wrapper">
+            <input type="text" id="confirmation">
+            <button class="hide-password">
+              <img src="./assets/images/icon-eye.svg" alt="hide password">
+            </button>
+            <button class="show-password">
+              <img src="./assets/images/icon-eye-off.svg" alt="show password">
+            </button>
+          </div>
+
+        </div>
+        <div class="terms">
+          <input type="checkbox" id="terms">
+          <label for="terms">I accept the <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.</label>
+        </div>
+        <button class="submit-button" type="submit">Initialize account</button>
+        <p>Already an operator? <a href="#">Log in</a></p>
+      </form>
+    </section>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Vincent</a>.
+  </footer>
+</body>
+</html>
