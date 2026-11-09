@@ -61,24 +61,26 @@
         </div>
       </article>
     </section>
-    <section right-section>
+    <section class="right-section">
       <div class="right-section-header">
         <p>New operator</p>
         <p>All fields required</p>
+        <p>All required</p>
       </div>
       <hr>
       <form>
         <div class="callsign">
-          <label for="callsign">> Callsign</label>
+          <label for="callsign"><span>></span> Callsign</label>
           <input type="text" placeholder="e.g. Vortex_07" id="email">
+          <p class="input-helper-text">3–20 characters: letters, numbers, _ or -</p>
         </div>
         <div class="email">
-          <label for="email">> Email</label>
+          <label for="email"><span>></span> Email</label>
           <input type="email" id="email" placeholder="you@example.com">
         </div>
         <div class="password">
-          <label for="password">> Password</label>
-          <div class="password-wrapper">
+          <label for="password"><span>></span> Password</label>
+          <div class="input-wrapper">
             <input type="text" id="password">
             <button class="hide-password">
               <img src="./assets/images/icon-eye.svg" alt="hide password">
@@ -93,11 +95,11 @@
             <div class="bar"></div>
             <div class="bar"></div>
           </div>
-          <p>Use at least 8 characters</p>
+          <p class="input-helper-text">Use at least 8 characters</p>
         </div>
         <div class="password-confirmation">
-          <label for="confirmation">> Confirm password</label>
-          <div class="password-confirmation-wrapper">
+          <label for="confirmation"><span>></span> Confirm password</label>
+          <div class="input-wrapper">
             <input type="text" id="confirmation">
             <button class="hide-password">
               <img src="./assets/images/icon-eye.svg" alt="hide password">
@@ -106,7 +108,6 @@
               <img src="./assets/images/icon-eye-off.svg" alt="show password">
             </button>
           </div>
-
         </div>
         <div class="terms">
           <input type="checkbox" id="terms">
