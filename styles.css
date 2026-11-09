@@ -275,11 +275,10 @@ form > div input::placeholder{
   text-transform: lowercase;
   font-size: 0.75rem;
   color: var(--Neutral-500);
-  display: none;
 }
 
 .error-message-wrapper{
-  display: flex;
+  display: none;
   flex-direction: row;
   gap: 0.5rem;
   align-items: flex-start;
@@ -336,7 +335,7 @@ form > div input::placeholder{
 }
 
 .password > .error-message-wrapper{
-  display: flex;
+  display: none;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between
@@ -390,7 +389,7 @@ form > div input::placeholder{
 }
 
 .terms > .error-message-wrapper{
-  display: flex;
+  display: none;
   flex-direction: row;
   gap: 0.5rem;
   align-items: flex-start;
@@ -422,6 +421,19 @@ form > div input::placeholder{
   border: 0.1rem var(--Red-400) solid;
   inset: 0;
   position: absolute;
+}
+
+.terms-checked{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--Lime-500);
+  background-image: url("./assets/images/icon-tick-16.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1rem;
+  outline: none;
+  border: none;/*Pick it up here you were about to deal with the succes state*/
 }
 
 .terms label{
