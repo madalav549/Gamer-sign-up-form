@@ -28,7 +28,7 @@ function checkName(nameInput){
   }
 };
 
-/*function checkEmail(emailInput){
+function checkEmail(emailInput){
   const email = emailInput.value.trim();
 
   if(emailRegex.test(email)){
@@ -42,7 +42,7 @@ function checkName(nameInput){
     emailInput.classList.add("input-error");
     return false;
   }
-};*/
+};
 
 submitButton.addEventListener("click", ()=>{
   let count = 0;
