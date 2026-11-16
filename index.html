@@ -68,10 +68,10 @@
         <p>All required</p>
       </div>
       <hr>
-      <form>
+      <form novalidate>
         <div class="callsign">
           <label for="callsign"><span>></span> Callsign</label>
-          <input type="text" placeholder="e.g. Vortex_07" id="email">
+          <input type="text" placeholder="e.g. Vortex_07" id="callsign">
           <p class="input-helper-text">3–20 characters: letters, numbers, _ or -</p>
           <div class="error-message-wrapper">
             <img src="./assets/images/icon-alert.svg" alt="alert icon">
@@ -90,11 +90,11 @@
         <div class="password">
           <label for="password"><span>></span> Password</label>
           <div class="input-wrapper">
-            <input type="text" id="password">
-            <button class="hide-password">
+            <input type="password" id="password">
+            <button class="hide-password" type="button">
               <img src="./assets/images/icon-eye.svg" alt="hide password">
             </button>
-            <button class="show-password">
+            <button class="show-password" type="button">
               <img src="./assets/images/icon-eye-off.svg" alt="show password">
             </button>
           </div>
@@ -117,10 +117,10 @@
           <label for="confirmation"><span>></span> Confirm password</label>
           <div class="input-wrapper">
             <input type="text" id="confirmation">
-            <button class="hide-password">
+            <button class="hide-password" type="button">
               <img src="./assets/images/icon-eye.svg" alt="hide password">
             </button>
-            <button class="show-password">
+            <button class="show-password" type="button">
               <img src="./assets/images/icon-eye-off.svg" alt="show password">
             </button>
           </div>
@@ -139,7 +139,7 @@
           <p>Accept the terms to continue</p>
         </div>
         </div>
-        <button class="submit-button" type="submit">Initialize account</button>
+        <button id="submit-button" type="button">Initialize account</button>
         <p>Already an operator? <a href="#">Log in</a></p>
       </form>
     </section>
@@ -148,5 +148,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
     Coded by <a href="#">Vincent</a>.
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
