@@ -255,6 +255,12 @@ form > div input{
   background-color: var(--Navy-alpha-60);
   padding: 1.2rem 1rem;
   border: 0.1rem var(--Neutral-300) solid;
+  color: var(--Neutral-50);
+  outline: none;
+}
+
+form > div input:focus{
+  border: 0.1rem var(--Neutral-300) solid;
 }
 
 .input-error{
